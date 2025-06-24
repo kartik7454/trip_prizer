@@ -30,7 +30,7 @@ const AirportSelect = () => {
     ];
     const [airport, setAirport] = useState(airports[0]);//selected airport 
     
-//filters the list of airports for search based on query
+//filters the list of airports for search bar based on searchquery
     const filteredAirports = airports.filter(item => 
         item.city.toLowerCase().includes(searchQuery.toLowerCase()) ||
         item.code.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -39,7 +39,7 @@ const AirportSelect = () => {
 
     return (
         <div className="airport-wrapper">
-            <div className="airport-select" onClick={() => setVisible(!visible)}> {/* toggles the visbility of list container to true*/}
+            <div className="airport-select" onClick={() => setVisible(!visible)}> {/* toggles the visbility of list container */}
                 <div className="flex-col">
                     
                     <span className="city">{airport.city}</span>
@@ -50,25 +50,27 @@ const AirportSelect = () => {
                     </div>
                 </div>
             </div>
-            {/*if visable true it renders the list constainer  */}
+            {/*if visable is true it renders the list constainer  */}
             {visible && (
                 <div className="airport-list">
+                    {/*search bar */}
                     <div className="search-container">
                         <input
                             type="text"
                             placeholder="Search for cities or airports..."
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}
-                            onClick={(e) => e.stopPropagation()}
+                            onClick={(e) => e.stopPropagation()}/*only the click of child(input) is registered not parent */
                             className="airport-search"
                         />
                     </div>
-                    {/* map and render the list after filtering it if  nothing in query it will return all*/}
+                    {/* map and render the list after filtering it if nothing in query >("") it will return all*/}
                     {filteredAirports.map((item, index) => (
                         <div 
                             key={index} 
                             className="airport-item"
                             onClick={() => {
+                                //set the item to selected airport> visability to false>and resets the search query
                                 setAirport(item);
                                 setVisible(false);
                                 setSearchQuery("");

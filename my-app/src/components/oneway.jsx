@@ -15,26 +15,20 @@ const Oneway = () => {
 
     const fareOptions = ["Regular", "Armed Forces", "Student", "Senior"];
     const {trip,setTrip} = useContext(TripContext);
-    const [showTravellerSelector, setShowTravellerSelector] = useState(true);
-    const [travellerInfo, setTravellerInfo] = useState({
-      adults: 1,
-      children: 0,
-      infants: 0,
-      travelClass: "Economy"
-    });
+    
     return (
       <div className="flight-search-container">
         
-        {/* Tabs */}
+       
         <div className="tabs">
           <button className="tab active">One Way</button>
           <button className="tab" onClick={()=>setTrip("roundTrip")}>Round Trip</button>
           <button className="tab"onClick={()=>setTrip("multiCity")}>Multi City</button>
         </div>
   
-        {/* Flight Details with vertical dividers */}
+       
         <div className="flight-details">
-                    {/* Each detail is a flex item */}
+                   
           <div className="detail-box">
             <label>To</label>
             <AirportSelect />
@@ -78,7 +72,7 @@ const Oneway = () => {
           </div>
         </div>
   
-        {/* Fare Type */}
+       
         <div className="fare-type-row">
           <label className="fare-type-label">Fare Type</label>
           <div className="fare-type-options">

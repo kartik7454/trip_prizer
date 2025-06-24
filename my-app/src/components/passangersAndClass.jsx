@@ -3,15 +3,16 @@ import "./passangersAndClass.css";
 import TravellerSelector from "./travellerSelector";
 
 const PassangersAndClass = () => {
-
+//for viability of container
   const [isSelectorOpen, setSelectorOpen] = useState(false);
-  //number and class of travelers
+  //number and class of travelers object
   const [travellerData, setTravellerData] = useState({
     adults: 1,
     children: 0,
     infants: 0,
     travelClass: "economy",
   });
+  const MAX_ADULTS = 9
   const max_adults = [1,2,3,4,5,6,7,8,9]
   const max_children = [0,1,2,3,4,5,6]
   const max_infants = [0,1,2,3,4,5,6]
@@ -20,11 +21,16 @@ const PassangersAndClass = () => {
   const totalTravellers =
     travellerData.adults + travellerData.children + travellerData.infants;
 
-  const handleApply = (newValues) => {
-    setTravellerData(newValues);
-    setSelectorOpen(false);
-  };
-
+  //alternative to the array
+  /* Array(MAX_ADULTS) -Creates a new array with MAX_ADULTS empty slots. */
+  /*.keys()-Returns a new Array (Iterator object) that contains the keys (indexes) for each index in the array.
+For our example, this would be an iterator for 0, 1, 2, 3, 4, 5, 6, 7, 8. */
+//(...)Converts the iterator into an array.
+{ console.log([...Array(MAX_ADULTS).keys()])
+  // [...Array(MAX_ADULTS).keys()].map((i) => {
+ 
+// });
+}
   return (
     <div className="passengers-and-class-container">
       <div className="display-view" onClick={() => setSelectorOpen(!isSelectorOpen)}>
