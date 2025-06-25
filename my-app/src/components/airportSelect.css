@@ -1,13 +1,20 @@
 .airport-wrapper {
     position: relative;
     width: 100%;
+    max-height: 200px;
 }
 
 .airport-select {
+    max-height: 200px;
+    overflow: auto;
     cursor: pointer;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
 }
 
 .airport-list {
@@ -66,7 +73,7 @@
 
 .label {
     font-size: 12px;
-    color: #666;
+    color: black;
 }
 
 .city {

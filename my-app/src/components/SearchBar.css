@@ -1,0 +1,145 @@
+.search-bar-container {
+    background-color: #002b5c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:120px;
+  }
+  
+  .search-bar {
+    display: flex;
+    height:100px;
+    align-items: center;
+    background-color: #003b7d;
+    border-radius: 8px;
+    color: white;
+    max-width: 1270px;
+    justify-content: space-between;
+  }
+  
+  .search-field {
+    padding: 10px 15px;
+    border-right: 1px solid #004a9e;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-width: 150px;
+  }
+  
+  .search-field:last-child {
+    border-right: none;
+  }
+  
+  .search-field label {
+    font-size: 12px;
+    color: #a0c4ff;
+    margin-bottom: 5px;
+  }
+  .search-field.trip-type select {
+    padding-left:5px;
+    background-color: #003b7d;
+    color :white
+  }
+  .search-field input,
+  .search-field .add-return {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    height: 30px;
+  }
+  
+  .search-field input[type="date"] {
+    border: 1px solid #a0c4ff;
+    border-radius: 4px;
+    padding: 5px;
+  }
+  
+  .search-field select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px;
+    padding-right: 30px;
+    height: 30px;
+  }
+  
+  .search-field select option {
+    background-color: #003b7d;
+  }
+  
+  .search-field input::placeholder {
+    color: white;
+  }
+
+  .add-return {
+    color: #ff9800;
+    cursor: pointer;
+  }
+  
+  .swap-icon {
+    color: white;
+    background-color: #003b7d;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    margin: 0 -10px;
+    z-index: 1;
+    border: 2px solid #002b5c;
+  }
+  
+  .search-button {
+    background-color: #6c757d;
+    border: none;
+    height: 10px;
+    color: white;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    padding: 30px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+  .search-button2 {
+    background-color: #107edf;
+    border: none;
+    height: 10px;
+    color: white;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .search-button:hover {
+    background-color: #5a6268;
+  }
+  
+  /* Override for PassangersAndClass if needed */
+  .search-field .passangers-and-class-container {
+    /* Example of overriding styles from child component */
+    padding: 0;
+  }
+
+  .search-field .airport-select input{
+    font-size: 16px !important;
+    font-weight: bold !important;
+  } 

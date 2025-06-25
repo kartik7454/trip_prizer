@@ -61,6 +61,10 @@
   cursor: pointer;
   font-weight: 500;
 }
+.home-title{
+  margin-top: 0;
+  padding: 20px 0;
+}
 .home-container{
   text-align: center;
   background-color: #001446;
