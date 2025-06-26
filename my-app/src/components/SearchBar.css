@@ -1,3 +1,4 @@
+.main_container{background-color: #002b5c;}
 .search-bar-container {
     background-color: #002b5c;
     display: flex;
@@ -9,7 +10,7 @@
   
   .search-bar {
     display: flex;
-    height:100px;
+    height:80px;
     align-items: center;
     background-color: #003b7d;
     border-radius: 8px;
@@ -143,3 +144,4 @@
     font-size: 16px !important;
     font-weight: bold !important;
   } 
+    

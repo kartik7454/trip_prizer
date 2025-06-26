@@ -1,0 +1,199 @@
+.flights-container {
+  background: #f5f7fa;
+  padding: 24px 0;
+  width: 60vw
+}
+
+.flights-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.flight-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 0 0 12px 0;
+  border: 1px solid #e3e6eb;
+  position: relative;
+}
+
+.flight-header {
+  display: flex;
+  align-items: center;
+  padding: 16px 24px 0 24px;
+  gap: 16px;
+}
+
+.airline-logo-placeholder {
+  width: 48px;
+  height: 48px;
+  background: #f0f0f0;
+  border-radius: 8px;
+  margin-right: 8px;
+}
+
+.airline-details {
+  flex: 1;
+}
+
+.airline-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.flight-number {
+  font-size: 0.95rem;
+  color: #888;
+}
+
+.flight-promo {
+  font-size: 0.95rem;
+  color: #b8860b;
+  font-weight: 500;
+  margin-left: auto;
+}
+
+.flight-info-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px 0 24px;
+  gap: 32px;
+}
+
+.flight-time {
+  text-align: center;
+}
+
+.time {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.city {
+  font-size: 1rem;
+  color: #666;
+}
+
+.flight-duration {
+  text-align: center;
+}
+
+.duration {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #1abc9c;
+}
+
+.non-stop {
+  font-size: 0.95rem;
+  color: #888;
+}
+
+.flight-price {
+  text-align: right;
+}
+
+.price {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1a73e8;
+}
+
+.per-adult {
+  font-size: 0.95rem;
+  color: #888;
+}
+
+.view-prices-btn {
+  margin-top: 8px;
+  background: #fff;
+  border: 1.5px solid #1a73e8;
+  color: #1a73e8;
+  font-weight: 600;
+  border-radius: 24px;
+  padding: 6px 20px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.view-prices-btn:hover {
+  background: #1a73e8;
+  color: #fff;
+}
+
+.flight-offer {
+  background: #fdf6e3;
+  color: #b8860b;
+  font-size: 1rem;
+  padding: 10px 24px;
+  border-radius: 0 0 8px 8px;
+  margin-top: 16px;
+  border-top: 1px solid #f3e6c0;
+}
+
+@media (max-width: 700px) {
+  .flight-info-row {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .flight-header, .flight-info-row {
+    padding: 12px;
+  }
+  .flight-offer {
+    padding: 10px 12px;
+  }
+}
+
+.date-price-selector {
+  display: flex;
+  overflow-x: auto;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.date-price-item {
+  flex: 0 0 auto;
+  min-width: 90px;
+  padding: 10px 8px;
+  margin: 0 4px;
+  border-bottom: 1px solid #eee;
+  color: #222;
+  background: #fff;
+  text-align: center;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.date-price-item.selected {
+  border-bottom: 3px solid #2196f3;
+  color: #2196f3;
+  font-weight: bold;
+  box-shadow: 0 2px 8px #e3e3e3;
+}
+
+.date-price-item.low {
+  color: green;
+}
+
+.date-price-item .date {
+  font-size: 14px;
+}
+
+.date-price-item .price {
+  font-size: 18px;
+}
+
+.date-price-selector::-webkit-scrollbar {
+  height: 6px;
+}
+
+.date-price-selector::-webkit-scrollbar-thumb {
+  background: #e0e0e0;
+  border-radius: 3px;
+}

@@ -1,15 +1,19 @@
 .passengers-and-class-container{color: black;
 
-padding-top: 0px;
+
   display: flex;
-  line-height: 1px;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
+  align-items: center;
   height: 60px;
+  padding-top: 10px;
   text-align: center;
+  height :30px;
   border-radius: 4px;
   border: 1px solid #d1d5db;
-  cursor:pointer
+  cursor: pointer;
+  overflow: hidden;
+  /* Ensure all inner text is vertically and horizontally centered within the fixed height */
 }
 .travellercontainer {
     top:30%;

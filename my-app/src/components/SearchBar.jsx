@@ -6,10 +6,10 @@ import { FaExchangeAlt } from 'react-icons/fa';
 
 const SearchBar = () => {
   const [tripType, setTripType] = useState('One Way');
-  const [departureDate, setDepartureDate] = useState('');
-  const [returnDate, setReturnDate] = useState('');
-
-  return (
+  
+  const [fareType, setFareType] = useState("Senior");
+  const fareOptions = ["Regular", "Armed Forces", "Student", "Senior"];
+  return (<div className='main_container'>
     <div className="search-bar-container">
       <div className="search-bar">
         <div className="search-field trip-type">
@@ -49,7 +49,45 @@ const SearchBar = () => {
         </div>
         <button className="search-button2">SEARCH</button>
       </div>
+    
     </div>
+    <div>
+    <div className="fare-type-row">
+      <label className="fare-type-label" style={{ color: "white" }}>Fare Type</label>
+      <div className="fare-type-options">
+        {fareOptions.map((option) => (
+	
+              <div
+	
+	             key={option}
+	               className={`fare-type-box${fareType === option ? " selected" : ""}`}
+	               style={{ height: "40px" }}
+	               onClick={() => setFareType(option)}
+                >
+	                 <div className={`fare-type-title${fareType === option ? " selected" : ""}`}>
+	
+                   {option}
+	
+	               {fareType === option && (
+	
+	             <span className="checkmark">&#10003;</span>
+	
+              )}
+	
+	             </div>
+	
+              <div className="fare-type-subtitle">Fares</div>
+	
+	             </div>
+	
+	               ))}
+	
+               </div>
+	
+               </div>
+    </div>
+    </div>
+    
   );
 };
 

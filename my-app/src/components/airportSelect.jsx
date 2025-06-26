@@ -45,8 +45,7 @@ const AirportSelect = () => {
                     <span className="city">{airport.city}</span>
                     <div className="details">
                         
-                        <span className="airport-name">{airport.airport}</span>
-                        <span className="code">{airport.code}</span>
+                        
                     </div>
                 </div>
             </div>

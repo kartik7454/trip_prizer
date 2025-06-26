@@ -1,0 +1,52 @@
+
+
+.filter-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+label {
+    margin-right: auto;
+    padding-left: 10px;
+}
+.slider-labels{display: flex;
+gap: 70px;}
+
+.time-filter-section {
+  margin: 24px 0 0 0;
+}
+
+.time-filter-row {
+  display: flex;
+  gap: 16px;
+  margin: 12px 0 24px 0;
+}
+
+.time-filter-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 2px px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  min-width: 60px;
+  cursor: default;
+  transition: box-shadow 0.2s;
+}
+
+.time-filter-btn span {
+  font-size: 1em;
+  margin-bottom: 4px;
+}
+
+.time-filter-btn div {
+  font-size: 0.85em;
+  text-align: center;
+  font-weight: 500;
+  color: #222;
+}

@@ -325,7 +325,7 @@
 .fare-type-row {
   display: flex;
   align-items: center;
-  margin-top: 24px;
+  padding-bottom: 15px;
 }
 
 .fare-type-label {
@@ -401,4 +401,8 @@
   font-size: 16px;
   box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
   transition: background 0.2s;
+}
+
+.results-container .fare-type-row {
+  margin-left: 100px;
 }
