@@ -26,11 +26,11 @@ const PassangersAndClass = () => {
   /*.keys()-Returns a new Array (Iterator object) that contains the keys (indexes) for each index in the array.
 For our example, this would be an iterator for 0, 1, 2, 3, 4, 5, 6, 7, 8. */
 //(...)Converts the iterator into an array.
-{ console.log([...Array(MAX_ADULTS).keys()])
-  // [...Array(MAX_ADULTS).keys()].map((i) => {
+// { console.log([...Array(MAX_ADULTS).keys()])
+//   // [...Array(MAX_ADULTS).keys()].map((i) => {
  
-// });
-}
+// // });
+// }
   return (
     <div className="passengers-and-class-container">
       <div className="display-view" onClick={() => setSelectorOpen(!isSelectorOpen)}>

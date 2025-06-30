@@ -154,7 +154,7 @@
   overflow-x: auto;
   margin-bottom: 20px;
   width: 100%;
-  box-sizing: border-box;
+  
 }
 
 .date-price-item {
@@ -162,16 +162,17 @@
   min-width: 90px;
   padding: 10px 8px;
   margin: 0 4px;
-  border-bottom: 1px solid #eee;
+  border: 1px solid #030303;
   color: #222;
   background: #fff;
   text-align: center;
   border-radius: 6px;
   box-sizing: border-box;
+  cursor:pointer;
 }
 
 .date-price-item.selected {
-  border-bottom: 3px solid #2196f3;
+  border: 1.5px solid #2196f3;
   color: #2196f3;
   font-weight: bold;
   box-shadow: 0 2px 8px #e3e3e3;

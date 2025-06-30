@@ -4,27 +4,36 @@ import './results.css';
 import Sidebar from '../components/sidebar';
 import Flights from '../components/flights';
 
+import { FilterProvider } from '../context/sideBarContext';
+
+
+
 const Results = () => {
   return (
     <div >
-      <div className="results-container"> 
-        <SearchBar />
+    
+      
+        <div className="results-container"> 
+          <SearchBar />
         </div>
-
-      <div className='content'>
-        <div className='sidebar'>
-          <Sidebar />
+      <FilterProvider>
+        <div className='content'>
+          <div className='sidebar'>
+            <Sidebar />
+          </div>
+          
+          <div className='flights'>
+            <Flights />
+          </div>
         </div>
-        
-      <div className='flights'>
-        <Flights />
-        </div>
+      </FilterProvider>
       
       </div>
       
       
      
-    </div>
+
+
   );
 };
 
