@@ -9,7 +9,7 @@ const flights_data = [
       "arrival_city": "Bengaluru",
       "price_per_adult": 5815,
       "currency": "INR",
-      "date": "Sat, Jun 28",
+      "date": "Tue, Jul 1",
       "stops": "Non-stop"
     },
     {
@@ -22,7 +22,7 @@ const flights_data = [
       "arrival_city": "Bengaluru",
       "price_per_adult": 6200,
       "currency": "INR",
-      "date": "Sat, Jun 28",
+      "date": "Tue, Jul 1",
       "stops": "One-stop"
     },
     {
@@ -35,7 +35,7 @@ const flights_data = [
       "arrival_city": "Bengaluru",
       "price_per_adult": 7000,
       "currency": "INR",
-      "date": "Mon, Jun 30",
+      "date": "Tue, Jul 1",
       "stops": "Non-stop"
     },
     {
@@ -48,7 +48,7 @@ const flights_data = [
       "arrival_city": "Bengaluru",
       "price_per_adult": 5600,
       "currency": "INR",
-      "date": "Mon, Jun 30",
+      "date": "Tue, Jul 1",
       "stops": "Non-stop"
     },
     {
@@ -61,7 +61,7 @@ const flights_data = [
       "arrival_city": "Bengaluru",
       "price_per_adult": 5900,
       "currency": "INR",
-      "date": "Mon, Jun 30",
+      "date": "Wed, Jul 2",
       "stops": "Non-stop"
     },
     {
@@ -74,7 +74,7 @@ const flights_data = [
       "arrival_city": "Bengaluru",
       "price_per_adult": 5900,
       "currency": "INR",
-      "date": "Tue, Jul 1",
+      "date": "Wed, Jul 2",
       "stops": "Non-stop"
     }
   ];
