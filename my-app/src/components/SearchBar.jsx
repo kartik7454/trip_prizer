@@ -22,14 +22,14 @@ const SearchBar = () => {
         </div>
         <div className="search-field">
           <label>FROM</label>
-          <AirportSelect />
+          <AirportSelect className="searchbar-airport-select" />
         </div>
         
        
 
         <div className="search-field">
           <label>TO</label>
-          <AirportSelect />
+          <AirportSelect className="searchbar-airport-select" />
         </div>
         <div className="search-field">
           <label>DEPARTURE</label>

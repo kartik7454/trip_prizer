@@ -4,6 +4,7 @@ import { TripContext } from "../context/tripcontext";
 import { format } from "date-fns";
 import AirportSelect from "./airportSelect";
 import PassangersAndClass from "./passangersAndClass";
+import { useNavigate } from "react-router-dom";
 
 const airportOptions = [
   { value: "BOM", label: "Mumbai (BOM, Chhatrapati Shivaji International)" },
@@ -13,6 +14,7 @@ const airportOptions = [
 ];
 
 const Multicity = () => {
+  const navigate = useNavigate();
   const [fareType, setFareType] = useState("Senior");
   const fareOptions = ["Regular", "Armed Forces", "Student", "Senior"];
   const { trip, setTrip } = useContext(TripContext);
@@ -46,14 +48,14 @@ const Multicity = () => {
           {/* Each detail is a flex item */}
           <div className="detail-box">
             <label>To</label>
-            <AirportSelect />
+            <AirportSelect className="airport-select"/>
           </div>
 
           <div className="divider" />
 
           <div className="detail-box">
             <label>From</label>
-            <AirportSelect />
+            <AirportSelect className="airport-select"/>
           </div>
 
           <div className="divider" />
@@ -126,7 +128,12 @@ const Multicity = () => {
 
       {/* Search Button */}
       <div className="search-button-container">
-        <button className="search-button">SEARCH</button>
+        <button className="search-button"
+        onClick={() => {
+          // You should have useNavigate hook in your component
+          // Example: const navigate = useNavigate();
+          navigate("/results");
+        }}>SEARCH</button>
       </div>
     </div>
   );

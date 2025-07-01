@@ -5,8 +5,11 @@ import { format } from "date-fns";
 import TravellerSelector from "./travellerSelector";
 import AirportSelect from "./airportSelect";
 import PassangersAndClass from "./passangersAndClass";
+import { useNavigate } from "react-router-dom";
+
 
 const Oneway = () => {
+  const navigate = useNavigate();
     const [fareType, setFareType] = useState("Senior");
     const [departureDate, setDepartureDate] = useState(() => {
       const today = new Date();
@@ -31,14 +34,14 @@ const Oneway = () => {
                    
           <div className="detail-box">
             <label>To</label>
-            <AirportSelect />
+            <AirportSelect className="airport-select" />
           </div>
 
           <div className="divider" />
 
           <div className="detail-box">
             <label>From</label>
-            <AirportSelect />
+            <AirportSelect className="airport-select"/>
           </div>
   
           <div className="divider" />
@@ -96,7 +99,18 @@ const Oneway = () => {
   
         {/* Search Button */}
         <div className="search-button-container">
-          <button className="search-button">SEARCH</button>
+          {/* Use useNavigate from react-router-dom for navigation in React */}
+          {/* Place this at the top of your file: import { useNavigate } from 'react-router-dom'; */}
+          <button
+            className="search-button"
+            onClick={() => {
+              // You should have useNavigate hook in your component
+              // Example: const navigate = useNavigate();
+              navigate("/results");
+            }}
+          >
+            SEARCH
+          </button>
         </div>
       </div>
     );

@@ -23,7 +23,7 @@ const Flights = () => {
       const [weekday, month, day] = formatted.split(' ');
       days.push({
         display: `${weekday}, ${month} ${day}`,
-       
+          
       });
     }
     return days;

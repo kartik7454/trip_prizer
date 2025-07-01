@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 import "./airportSelect.css";
 
-const AirportSelect = () => {
+const AirportSelect = (props) => {
     const [visible, setVisible] = useState(false);//visibility of the airports list 
     const [searchQuery, setSearchQuery] = useState("");//for search query 
     
@@ -39,7 +39,7 @@ const AirportSelect = () => {
 
     return (
         <div className="airport-wrapper">
-            <div className="airport-select" onClick={() => setVisible(!visible)}> {/* toggles the visbility of list container */}
+            <div className={` ${props.className}`} onClick={() => setVisible(!visible)}> {/* toggles the visbility of list container */}
                 <div className="flex-col">
                     
                     <span className="city">{airport.city}</span>
